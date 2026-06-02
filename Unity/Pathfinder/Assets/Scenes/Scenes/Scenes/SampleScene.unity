@@ -494,16 +494,21 @@ PrefabInstance:
     - target: {fileID: 7853451013892988743, guid: d5f7641c195853b43b4d6bc19055efd3, type: 3}
       propertyPath: properties
       value: 
-      objectReference: {fileID: 11400000, guid: 94b1c44bfef889c4985ca714bf5d5f61, type: 2}
+      objectReference: {fileID: 11400000, guid: 8fa1a3f36725e67408e715f795857fcc, type: 2}
     - target: {fileID: 7853451013892988743, guid: d5f7641c195853b43b4d6bc19055efd3, type: 3}
       propertyPath: cameraGameObject
       value: 
-      objectReference: {fileID: 1850606972}
+      objectReference: {fileID: 1224982954}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f7641c195853b43b4d6bc19055efd3, type: 3}
+--- !u!1 &1224982954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1925706167555180, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
+  m_PrefabInstance: {fileID: 1384532128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1384532128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -518,7 +523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1770373930531382, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
       propertyPath: m_TagString
-      value: MainCamera
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4341758184416722, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,6 +565,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114452457888554488, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
+      propertyPath: cameraFollowTarget
+      value: 
+      objectReference: {fileID: 300680417}
     - target: {fileID: 224374410726632628, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -777,11 +786,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cafe370944996d448bd63adc75648669, type: 3}
---- !u!1 &1850606972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1770373930531382, guid: 8f17a8187a1a0044b8f6f37a117a16eb, type: 3}
-  m_PrefabInstance: {fileID: 1384532128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
