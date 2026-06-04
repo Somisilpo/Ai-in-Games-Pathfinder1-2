@@ -17,11 +17,6 @@ namespace K_PathFinder.Samples {
         private CharacterController controler;
         private PathFinderAgent agent;  
         private int currentPoint;   //current patrol point 
-  
-
-
-        
-
 
         void Start() {
             if (patrol == null || patrol.Count == 0)
@@ -48,16 +43,13 @@ namespace K_PathFinder.Samples {
             PathFinder.QueueGraph(new Bounds(transform.position, Vector3.one * 20), agent.properties);
         }
         
-        
-        
         void Update() { 
-        {
             // Follow the player if detected
-            if (playerFinded)
+            if (playerFinded && player != null)
             {
                 agent.SetGoalMoveHere(player.position);
             }
-             else if (agent.haveNextNode) {
+            else if (agent.haveNextNode) {
                 //remove point if it is closer than agent radius. return true if removed. there is other versions of that function
                 if (agent.RemoveNextNodeIfCloserThanRadiusVector2()) {
                     //before that there was point. if after it removed here no point mean we reach end of current path
@@ -75,14 +67,12 @@ namespace K_PathFinder.Samples {
                 if (agent.haveNextNode) {
                     Vector2 moveDirection = agent.nextNodeDirectionVector2.normalized;                  
                     controler.SimpleMove(new Vector3(moveDirection.x, 0, moveDirection.y) * speed);
-                    //Quaternion target = Quaternion.Euler(0f, moveDirection.z/moveDirection.x * 360.0f, .0f);
-                    //transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10f);
-                    }
+                }
             }
-            else
+            else {
                 RecalculatePath(); //get path to current point            
+            }
         } 
-    }
 
         public void RecalculatePath() {
             agent.SetGoalMoveHere(patrol[currentPoint]);
@@ -92,8 +82,7 @@ namespace K_PathFinder.Samples {
         {
             foreach (ContactPoint contact in collision.contacts)
             {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
-            // Debug.Log("collision");
+                Debug.DrawRay(contact.point, contact.normal, Color.white);
             }
         }
         
