@@ -149,11 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: -5.4481864, y: -3.2574992, z: -10.528395}
-  - {x: 11.173501, y: -3.0018244, z: 8.269536}
+  - {x: -5.8594904, y: -3.2574992, z: -3.8936105}
+  - {x: 11.173501, y: -3.0018244, z: 9.001731}
   - {x: 1.0226336, y: -3.5, z: 10.221968}
-  - {x: -2.0508459, y: -3.343824, z: 2.8805928}
-  - {x: -5.506028, y: -3.5281544, z: 6.2284355}
+  - {x: -2.4479883, y: -3.343824, z: 2.8805928}
+  - {x: -6.5291996, y: -3.5281544, z: 10.111841}
   mask:
     serializedVersion: 2
     m_Bits: 1
@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069943803617497216, guid: 3f14da3caf138cc47b01393d7f606400, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.39
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 9069943803617497216, guid: 3f14da3caf138cc47b01393d7f606400, type: 3}
       propertyPath: m_LocalPosition.y
@@ -278,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069943803617497216, guid: 3f14da3caf138cc47b01393d7f606400, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.87
+      value: 10.05
       objectReference: {fileID: 0}
     - target: {fileID: 9069943803617497216, guid: 3f14da3caf138cc47b01393d7f606400, type: 3}
       propertyPath: m_LocalRotation.w
