@@ -9,4 +9,32 @@ UserSettings/
 *.sln
 *.suo
 *.user
-*.userprefs
+*.userprefs# =========================
+# Unreal Engine
+# =========================
+
+# Unreal generated folders
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+
+# Unreal local/editor files
+/.vs/
+/.idea/
+/*.VC.db
+/*.opensdf
+/*.opendb
+/*.sdf
+/*.suo
+/*.user
+/*.userosscache
+/*.sln.DotSettings.user
+
+# Unreal generated project files
+/*.xcodeproj
+/*.xcworkspace
+
+# Unreal logs and crashes
+/Crashes/
